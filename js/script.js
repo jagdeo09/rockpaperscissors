@@ -17,15 +17,21 @@ $("#shoot").click(function(){
 });
 
 $("#shoot").click(function(){
-    randomNumber = ("rock","paper","scissors")
+    randomNumber = ("rock","paper", "scissors");
     computerChoice = Math.random();
-    if (computerChoice > .99) {
+    
+    console.log(computerChoice);
+    if (computerChoice <= .33) {
         $("#computerChoice").text("rock");
     }
-    else if (computerChoice > .66) {
+    
+    else if (computerChoice > .33 && computerChoice < .66) {
         $("#computerChoice").text("paper");
-    }
-    else if (computerChoice > .33) {
+}
+    
+ else if (computerChoice >= .66){
         $("#computerChoice").text("scissors");
-    }
+}
+
+    
 });
