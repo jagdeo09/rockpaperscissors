@@ -32,6 +32,23 @@ $("#shoot").click(function(){
  else if (computerChoice >= .66){
         $("#computerChoice").text("scissors");
 }
+console.log (userChoice)
+console.log (computerChoice)    
 
-    
+if(
+    ((userChoice === "rock")&&(ComputerChoice === "rock"))||
+    ((userChoice === "paper")&&(ComputerChoice === "paper"))||
+    ((userChoice === "scissors")&&(ComputerChoice === "scissors"))||){
+        $("message").text("Tie");
+    }
+    else if ((userChoice === "rock")&&(ComputerChoice === "paper"))|| 
+    ((userChoice === "paper")&&(ComputerChoice === "scissors"))||
+    ((userChoice === "scissors")&&(ComputerChoice === "rock"))||){
+        $("message").text("Computer Wins!");
+    }
+    else if ((userChoice === "rock")&&(ComputerChoice === "paper"))||
+}
+
+
+
 });
