@@ -39,21 +39,21 @@ console.log(userChoice)
 console.log(computerChoice)
 
 if (
-    ((userChoice==="rock")&&(computerChoice==="Rock"))||
-    ((userChoice==="paper")&&(computerChoice==="Paper"))||
-    ((userChoice==="scissor")&&(computerChoice==="Scissor"))
+    ((userChoice==="rock")&&(computerChoice==="rock"))||
+    ((userChoice==="paper")&&(computerChoice==="paper"))||
+    ((userChoice==="scissors")&&(computerChoice==="scissors"))
     ){
-    $("#message").text("Tie");
+    $("#message").text("No one wins");
 }
-else if (((userChoice==="rock")&&(computerChoice==="Paper"))||
-    ((userChoice==="paper")&&(computerChoice==="Scissor"))||
-    ((userChoice==="scissor")&&(computerChoice==="Rock"))
+else if (((userChoice==="rock")&&(computerChoice==="paper"))||
+    ((userChoice==="paper")&&(computerChoice==="scissors"))||
+    ((userChoice==="scissors")&&(computerChoice==="rock"))
     ){
     $("#message").text("Computer Wins");
 }
-else if(((userChoice==="rock")&&(computerChoice==="Scissor"))||
-    ((userChoice==="paper")&&(computerChoice==="Rock"))||
-    ((userChoice==="scissor")&&(computerChoice==="Paper"))
+else if(((userChoice==="rock")&&(computerChoice==="scissors"))||
+    ((userChoice==="paper")&&(computerChoice==="rock"))||
+    ((userChoice==="scissors")&&(computerChoice==="paper"))
     ){
     $("#message").text("User Wins ");
 }
