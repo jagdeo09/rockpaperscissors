@@ -23,16 +23,16 @@ $("#shoot").click(function(){
      var randomAnswer;
      randomAnswer= Math.random();
      if (randomAnswer <.33){
-        $("#computerChoice").text("Rock");
-         computerChoice = "Rock";
+        $("#computerChoice").text("rock");
+         computerChoice = "rock";
      }
     else if(randomAnswer<.66){
-        $("#computerChoice").text("Paper");
-         computerChoice = "Paper";
+        $("#computerChoice").text("paper");
+         computerChoice = "paper";
     }
     else {
-        $("#computerChoice").text("Scissor");
-        computerChoice ="Scissor";
+        $("#computerChoice").text("scissors");
+        computerChoice ="scissors";
     }
 
 console.log(userChoice)
